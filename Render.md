@@ -1,6 +1,5 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-let style = { color: 'green', border: '1px solid red', margin: '5px' }
+```jsx
+// 定义 JSX
 let virtualDOM = (
   <div key="A1" style={style}>
     A1
@@ -12,5 +11,7 @@ let virtualDOM = (
     <div key="B2" style={style}>B2</div>
   </div>
 )
-
+  
+// 完全 自己实现这个 render 的全过程，包括调度、调和和提交三个阶段
 ReactDOM.render(virtualDOM, document.getElementById('root'))
+```
